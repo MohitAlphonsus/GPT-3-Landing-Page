@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-gradient {
+	background: radial-gradient(
+		circle at 30% -100%,
+		#042c54 25%,
+		rgba(4, 44, 84, 1) 85%,
+		rgba(27, 120, 222, 1) 100%
+	);
+}
+
+.text-gradient {
+	background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+}
+
+.gradient-bar {
+	background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+}
