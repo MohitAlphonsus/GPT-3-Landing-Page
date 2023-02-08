@@ -5,6 +5,7 @@ module.exports = {
 		colors: {
 			white: '#fff',
 			colorBg: '#040C18',
+			colorFooter: '#031B34',
 			colorBlog: '#042c54',
 			colorText: '#81AFDD',
 			colorSubtext: '#FF8A71',
