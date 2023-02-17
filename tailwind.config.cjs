@@ -11,6 +11,8 @@ module.exports = {
 			colorSubtext: '#FF8A71',
 			colorButton: '#ff4820',
 			colorInput: '#0F4279',
+			transparent: 'transparent',
+			currentColor: 'currentColor',
 		},
 		extend: {},
 	},
