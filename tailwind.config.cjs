@@ -10,6 +10,7 @@ module.exports = {
 			colorText: '#81AFDD',
 			colorSubtext: '#FF8A71',
 			colorButton: '#ff4820',
+			colorInput: '#052D56',
 		},
 		extend: {},
 	},
