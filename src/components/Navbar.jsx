@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
 import logo from '../assets/logo.svg';
+import Button from './Button';
 
 const navMenu = [
 	{ name: 'Home', id: 'home' },
@@ -16,7 +17,7 @@ const Navbar = () => {
 	const [toggleMenu, setToggleMenu] = useState(false);
 
 	return (
-		<div className="flex justify-between items-center px-10 py-4 lg:py-8  lg:px-24">
+		<div className="flex justify-between items-center px-10 py-4 lg:py-8 lg:px-16 xl:px-24">
 			<div className="flex justify-start items-center flex-1 ">
 				<div className="mr-8">
 					<img src={logo} alt="logo" className="w-[62.56px]" />
@@ -31,12 +32,10 @@ const Navbar = () => {
 			</div>
 			<div className="hidden lg:block">
 				<a className={navLinkClasses}>Sign in</a>
-				<button
-					type="button"
+				<Button
+					name="Sign up"
 					className="bg-colorButton text-white py-4 px-8 font-medium text-lg rounded-lg"
-				>
-					Sign up
-				</button>
+				/>
 			</div>
 			<div className="lg:hidden relative ml-4">
 				{toggleMenu ? (
@@ -48,7 +47,7 @@ const Navbar = () => {
 					/>
 				) : (
 					<RiMenuLine
-						lassName="cursor-pointer"
+						className="cursor-pointer"
 						color="#fff"
 						size={27}
 						onClick={() => setToggleMenu(true)}
@@ -65,12 +64,10 @@ const Navbar = () => {
 						</div>
 						<div className="flex flex-col gap-3">
 							<a className={navLinkClasses}>Sign in</a>
-							<button
-								type="button"
+							<Button
+								name="Sign up"
 								className="bg-colorButton text-white py-2 px-4 font-medium rounded-lg"
-							>
-								Sign up
-							</button>
+							/>
 						</div>
 					</div>
 				)}
