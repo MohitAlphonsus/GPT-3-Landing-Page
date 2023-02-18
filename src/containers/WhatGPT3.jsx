@@ -8,7 +8,7 @@ const boxClasses = 'flex flex-col gap-4 lg:gap-6 w-full';
 
 const WhatGPT3 = () => {
 	return (
-		<div className="px-24">
+		<div className="px-12 lg:px-16 xl:px-24">
 			<div className="bg-gradient-box px-12 py-12 lg:px-16 lg:py-16">
 				<div className="flex flex-col lg:flex-row gap-4 lg:gap-0 mb-12">
 					<h4 className={`${headingQuatClasses} w-1/2 `}>What is GPT-3</h4>
