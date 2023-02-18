@@ -8,7 +8,7 @@ import blogImg5 from '../assets/blog05.png';
 
 const Blogs = () => {
 	return (
-		<div className="px-12 lg:px-16 xl:px-24">
+		<div className="px-12 lg:px-16 xl:px-24 mb-20">
 			<h1 className="text-gradient text-5xl xl:text-6xl font-semibold mb-10">
 				A lot is happening, We are blogging about it.
 			</h1>
