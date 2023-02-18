@@ -30,9 +30,9 @@ const buttonClasses =
 
 const Features = () => {
 	return (
-		<div className="px-12 lg:px-16 xl:px-24 py-20 flex gap-10">
-			<div className="w-1/2 xl:w-2/5">
-				<h3 className={`${headingTertiaryClasses} mb-8`}>
+		<div className="px-12 lg:px-16 xl:px-24 py-20 flex flex-col md:flex-row gap-10">
+			<div className="md:w-1/2 xl:w-2/5">
+				<h3 className={`${headingTertiaryClasses} mb-4 md:mb-8`}>
 					The Future is Now and You Just Need To Realize It. Step into Future
 					Today & Make it Happen.
 				</h3>
@@ -41,7 +41,7 @@ const Features = () => {
 					name="Request Early Access to Get Started"
 				/>
 			</div>
-			<div className="flex flex-col gap-10 w-1/2 xl:w-3/5">
+			<div className="flex flex-col gap-10 md:w-1/2 xl:w-3/5">
 				{content.map(cont => (
 					<Feature key={cont.id} title={cont.title} text={cont.text} />
 				))}
